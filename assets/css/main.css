@@ -7,12 +7,50 @@ nav{
 	background-color: whitesmoke;
 }
 
-nav ul li{
-	display: inline-block;
-	float: right;
-	width: 30px;
-}
+nav ul li a{
+	text-decoration: none;
+  }
+
+  nav ul li{
+  	width: 100px;
+  	display: inline-block;
+  	float: right;
+  }
 
 #home{
 	background-image: url("../img/home.jpg");
+	text-align: center;
+	height: 500px;
 }
+
+#home h1{
+	color: whitesmoke;
+	margin-top: 50px;
+}
+
+#home button{
+	background-color: blue;
+	border-radius: 10px;
+	width: 80px;
+	margin-top: 50px;
+}
+
+img{
+	width: 40%;
+}
+
+#hackaton{
+	background-color: yellow;
+
+} 
+
+#hackaton p, #hackaton h1, #hackaton button{
+	float: right;
+	text-align: center;
+	display: block;
+}
+
+form{
+	float: right;
+}
+
