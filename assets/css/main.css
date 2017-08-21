@@ -40,6 +40,7 @@ button{
 	width: 80px;
 	margin-top: 50px;
 	color: whitesmoke;
+	cursor: pointer;
 }
 
 img{
@@ -95,5 +96,15 @@ font-size: 2em;
 
 footer{
 	background-color: #32A4D9;
+	height: 50px;
+}
+
+footer p{
+	color: whitesmoke;
+	display: inline;
+}
+
+footer a{
+	color: yellow;
 }
 
