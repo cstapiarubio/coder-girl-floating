@@ -34,3 +34,8 @@ function validacion(){
 }
 
 validacion();
+
+function ins() {
+  document.getElementById("frase").innerHTML = "CÓDIGO QUE TRANSFORMA";
+}
+
