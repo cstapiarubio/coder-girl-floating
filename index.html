@@ -39,11 +39,11 @@
 			<p>Avenida Sol #1050</p>
 			<p>San Pedro, RM</p>
 			<p>Fono:(+56)86896860</p>
-			<input class="bloque" type="text" placeholder="Name" name="">
-			<input class="bloque" type="text" name="" placeholder="Last name">
-			<input class="bloque" type="email" placeholder="Email" name="">
-			<input class="bloque" type="text" placeholder="Message" name="">
-			<button>ENVIAR</button>
+			<input class="bloque" type="text" placeholder="Name" id="name" required>
+			<input class="bloque" type="text" id="lastname" placeholder="Last name" required>
+			<input class="bloque" type="email" placeholder="Email" id="correo" required>
+			<input class="bloque" type="text" placeholder="Message" id="mensaje" required>
+			<button onsubmit="return validacion()">ENVIAR</button>
 		</form>
 	</section>
 	<footer>
