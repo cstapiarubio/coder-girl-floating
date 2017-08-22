@@ -33,9 +33,12 @@ function validacion(){
 	texto();
 }
 
-validacion();
-
+//boton que al apretarlo cambia el titulo 
 function ins() {
   document.getElementById("frase").innerHTML = "CÓDIGO QUE TRANSFORMA";
 }
 
+//boton que al apretarlo cambia de izq a derecha la img 
+function hack() {
+    document.getElementById("img-hack").style.float = "right";
+}
