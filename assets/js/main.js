@@ -1,3 +1,4 @@
+//validación formulario
 function validacion(){
 	function nombre(){ 
 		var nombre = document.getElementById("name").value;
@@ -17,7 +18,8 @@ function validacion(){
 
 	function correo() {  
 		var correo = document.getElementById("correo").value;
-		 if (correo !==(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)){
+		var expresion = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		 if (!expresion.test(correo)){
 			alert("Email inválido");
 		}
 	}
@@ -26,12 +28,13 @@ function validacion(){
 
 	function texto(){
 		var mensaje=document.getElementById("mensaje").value;
-		 if(mensaje !==(/^[A-Z][a-z]{1,100}$/)){
+		 if(mensaje.length>100){
 			alert("Extensión de mensaje inválido");
 		}
 	}
 	texto();
 }
+
 
 //boton que al apretarlo cambia el titulo 
 function ins() {
